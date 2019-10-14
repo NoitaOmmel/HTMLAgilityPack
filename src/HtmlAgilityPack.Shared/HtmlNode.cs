@@ -587,7 +587,7 @@ namespace HtmlAgilityPack
 					if (_name == null)
 						_optimizedName = string.Empty;
 					else
-						_optimizedName = _name.ToLowerInvariant();
+						_optimizedName = _name;
 				}
 
 				return _optimizedName;
