@@ -92,8 +92,13 @@ namespace HtmlAgilityPack
 		/// </summary>
 		static HtmlNode()
 		{
+
 			// tags whose content may be anything
 			ElementsFlags = new Dictionary<string, HtmlElementFlag>(StringComparer.OrdinalIgnoreCase);
+
+			/*
+			   nope lol
+
 			ElementsFlags.Add("script", HtmlElementFlag.CData);
 			ElementsFlags.Add("style", HtmlElementFlag.CData);
 			ElementsFlags.Add("noxhtml", HtmlElementFlag.CData); // can't found.
@@ -129,6 +134,7 @@ namespace HtmlAgilityPack
 			// <p>bla<p>bla will be transformed into <p>bla<p>bla and not <p>bla></p><p>bla</p> or <p>bla<p>bla</p></p>
 			//<br> see above
 			ElementsFlags.Add("br", HtmlElementFlag.Empty | HtmlElementFlag.Closed);
+			*/
 
 		    if (!HtmlDocument.DisableBehaviorTagP)
 		    {
